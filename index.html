@@ -23,7 +23,9 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animation -->
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
 
     <title>TRADRE</title>
@@ -36,44 +38,19 @@
         <a class="navbar-brand" href="#">
           <img src="assets/images/logo.svg" alt="" />
         </a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button id="myBtn" class="ml-auto btn-toggle" type="button">
           <img src="assets/images/toggle-humburger.svg" alt="" />
-        </button> -->
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-            <li>
-              <img src="assets/images/toggle-humburger.svg" alt="" />
-            </li>
-          </ul>
+        </button>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="z-index: 3">
+          <span class="close">&times;</span>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#news">Latest News</a>
+          <a href="#makeEnquiry">Make enquiry</a>
         </div>
       </div>
     </nav>
@@ -84,13 +61,15 @@
       <img class="hero-img" src="assets/images/hero-img.png" alt="" />
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 text-white hero-text" style="z-index: 2">
-            <h1>
-              Your partner for optimally profitable real estate investments
-            </h1>
-            <div class="d-flex aligns-items-center">
-              <button type="button" class="btn">Make enquiry</button>
-              <a href="http://" class="btn-call">Call: +31 1111 2222</a>
+          <div class="col-lg-7 text-white hero-text" style="z-index: 1">
+            <div data-aos="fade-up">
+              <h1>
+                Your partner for optimally profitable real estate investments
+              </h1>
+              <div class="d-flex aligns-items-center">
+                <button type="button" class="btn">Make enquiry</button>
+                <a href="http://" class="btn-call">Call: +31 1111 2222</a>
+              </div>
             </div>
           </div>
         </div>
@@ -99,33 +78,35 @@
     <!-- END:Hero -->
 
     <!-- START:About -->
-    <section class="about-us">
+    <section class="about-us" id="about">
       <img class="about-img" src="assets/images/about-img.png" />
       <div class="container">
         <div class="row about-text">
-          <div class="col-lg-9" style="z-index: 2">
-            <p>About us</p>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <div class="about-paragraph">
-              <p>
-                Proud of what we have achieved from the drawing board last year!
-                With a lot of effort we have set up our real estate company:
-                Tradre Group . We focus on the growth areas in the Netherlands.
-                We strive for a continuously growing real estate portfolio of
-                stable rented real estate.
-              </p>
-              <p>
-                With our own, unique data-driven search method and the network
-                of our own trained sourcing partners, we are able to realize a
-                custom-made real estate portfolio. At Tradre Group we work with
-                a fixed, realistic purchasing policy, which means that many
-                parties find it interesting to work with us!
-              </p>
-              <div class="more-about">
-                <a href="#" class="more-about"
-                  >More about us
-                  <img class="icon" src="assets/images/arrow-forward.svg"
-                /></a>
+          <div class="col-lg-9" style="z-index: 1">
+            <div data-aos="fade-up">
+              <p>About us</p>
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+              <div class="about-paragraph">
+                <p>
+                  Proud of what we have achieved from the drawing board last
+                  year! With a lot of effort we have set up our real estate
+                  company: Tradre Group . We focus on the growth areas in the
+                  Netherlands. We strive for a continuously growing real estate
+                  portfolio of stable rented real estate.
+                </p>
+                <p>
+                  With our own, unique data-driven search method and the network
+                  of our own trained sourcing partners, we are able to realize a
+                  custom-made real estate portfolio. At Tradre Group we work
+                  with a fixed, realistic purchasing policy, which means that
+                  many parties find it interesting to work with us!
+                </p>
+                <div class="more-about">
+                  <a href="#" class="more-about"
+                    >More about us
+                    <img class="icon" src="assets/images/arrow-forward.svg"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -135,41 +116,44 @@
     <!-- END:About -->
 
     <!-- START:our-service -->
-    <section class="our-services">
+    <section class="our-services" id="services">
       <div class="container">
         <p>Our services</p>
         <h1>What we do</h1>
-        <div class="row service-content">
-          <div class="col">
-            <img src="assets/images/service1.png" alt="" />
-          </div>
-          <div class="col">
-            <h3>Residential Real Estate</h3>
-            <p>
-              We offer the security of creditworthy tenants and a long-term
-              lease.
-            </p>
-            <a href="#">
-              Learn more
-              <img src="assets/images/arrow-forward.svg" alt="" />
-            </a>
+        <div data-aos="fade-up">
+          <div class="row service-content">
+            <div class="col">
+              <img src="assets/images/service1.png" alt="" />
+            </div>
+            <div class="col">
+              <h3>Residential Real Estate</h3>
+              <p>
+                We offer the security of creditworthy tenants and a long-term
+                lease.
+              </p>
+              <a href="#">
+                Learn more
+                <img src="assets/images/arrow-forward.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="row service-content mt-5" style="padding-bottom: 96px">
-          <div class="col">
-            <img src="assets/images/sevice2.png" alt="" />
-          </div>
-          <div class="col">
-            <h3>Commercial Real Estate</h3>
-            <p>
-              Our objects that are inhabited meet the minimum energy label C. We
-              carry out necessary upgrades to objects ourselves.
-            </p>
-            <a href="#">
-              Learn more
-              <img src="assets/images/arrow-forward.svg" alt="" />
-            </a>
+        <div data-aos="fade-up">
+          <div class="row service-content mt-5" style="padding-bottom: 96px">
+            <div class="col">
+              <img src="assets/images/sevice2.png" alt="" />
+            </div>
+            <div class="col">
+              <h3>Commercial Real Estate</h3>
+              <p>
+                Our objects that are inhabited meet the minimum energy label C.
+                We carry out necessary upgrades to objects ourselves.
+              </p>
+              <a href="#">
+                Learn more
+                <img src="assets/images/arrow-forward.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -182,27 +166,29 @@
       <div class="container">
         <div class="row investor-content" style="z-index: 2">
           <div class="col-lg-9">
-            <p>For investors</p>
-            <h1>
-              Building a custom-made real estate
-              <span
-                ><br />
-                portfolio together</span
-              >
-            </h1>
-            <div class="investor-paragraph">
-              <p>
-                Cooperation, flexibility and guarantee. Those are 3 keywords on
-                which our working method is based. We build custom-made real
-                estate portfolios for our investors, entirely according to the
-                wishes discussed in advance and with a continuous supply of new,
-                suitable objects.
-              </p>
-              <div class="more-investor">
-                <a href="#" class="more-investor"
-                  >More about investors
-                  <img class="icon" src="assets/images/arrow-forward.svg"
-                /></a>
+            <div data-aos="fade-up">
+              <p>For investors</p>
+              <h1>
+                Building a custom-made real estate
+                <span
+                  ><br />
+                  portfolio together</span
+                >
+              </h1>
+              <div class="investor-paragraph">
+                <p>
+                  Cooperation, flexibility and guarantee. Those are 3 keywords
+                  on which our working method is based. We build custom-made
+                  real estate portfolios for our investors, entirely according
+                  to the wishes discussed in advance and with a continuous
+                  supply of new, suitable objects.
+                </p>
+                <div class="more-investor">
+                  <a href="#" class="more-investor"
+                    >More about investors
+                    <img class="icon" src="assets/images/arrow-forward.svg"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -212,7 +198,7 @@
     <!-- END:Investor -->
 
     <!-- START:Latest Neww -->
-    <section class="latest-news">
+    <section class="latest-news" id="news">
       <div class="container news-content">
         <p>For investors</p>
         <div class="d-flex justify-content-between">
@@ -223,48 +209,57 @@
           /></a>
         </div>
         <div class="row mt-5">
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="assets/images/news1.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p>25 June 2021</p>
-                <h3>The Netherlands' first wooden high-rise project</h3>
-                <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+          <div class="col-md-4">
+            <div data-aos="fade-up" data-aos-duration="500">
+              <div class="card">
+                <img
+                  class="img-card-news"
+                  src="assets/images/news1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>25 June 2021</p>
+                  <h3>The Netherlands' first wooden high-rise project</h3>
+                  <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="assets/images/news2.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p>9 July 2021</p>
-                <h3>
-                  Tradre is working on Het Hooghout, a residential building in
-                  Eindhoven
-                </h3>
-                <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+          <div class="col-md-4">
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div class="card">
+                <img
+                  class="img-card-news"
+                  src="assets/images/news2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>9 July 2021</p>
+                  <h3>
+                    Tradre is working on Het Hooghout, a residential building in
+                    Eindhoven
+                  </h3>
+                  <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="assets/images/news3.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p>13 December 2022</p>
-                <h3>Extension of sponsorship PSV Eindhoven</h3>
-                <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+          <div class="col-md-4">
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <div class="card">
+                <img
+                  class="img-card-news"
+                  src="assets/images/news3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>13 December 2022</p>
+                  <h3>Extension of sponsorship PSV Eindhoven</h3>
+                  <a href=""> <img src="assets/images/arrow-forward.svg" /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -274,11 +269,13 @@
     <!-- END:Latest Neww -->
 
     <!-- START: CTA -->
-    <section class="cta-info">
-      <div class="container text-center">
-        <h1>Let's build something great together</h1>
+    <section class="cta-info" id="makeEnquiry">
+      <div data-aos="fade-up">
+        <div class="container text-center">
+          <h1>Let's build something great together</h1>
 
-        <button type="button" class="btn btn-cta">Make enquiry</button>
+          <button type="button" class="btn btn-cta">Make enquiry</button>
+        </div>
       </div>
     </section>
     <!-- END: CTA -->
@@ -308,7 +305,33 @@
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -320,7 +343,12 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- animation -->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
