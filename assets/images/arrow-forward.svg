@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15" width="21" height="15">
+	<title>Homepage</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #00b4bc } 
+	</style>
+	<g id="Homepage">
+		<g id="Group 4">
+			<path id="Icon ionic-md-arrow-forward" class="shp0" d="M0.06 8.22L17.12 8.22L12 13.33L13.33 14.61L20.63 7.31L13.33 0L12.05 1.28L17.12 6.39L0.06 6.39L0.06 8.22Z" />
+		</g>
+	</g>
+</svg>
