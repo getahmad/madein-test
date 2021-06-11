@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 24" width="31" height="24">
+	<title>Homepage</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #ffffff } 
+	</style>
+	<g id="Homepage">
+		<g id="noun_menu_547165">
+			<path id="Path 1" class="shp0" d="M1.95 2.65L30 2.65L30 1L1.95 1L1.95 2.65Z" />
+			<path id="Path 2" class="shp0" d="M30 11.16L1.95 11.16L1.95 12.82L30 12.82L30 11.16Z" />
+			<path id="Path 3" class="shp0" d="M16.4 21.33L1.95 21.33L1.95 22.98L16.4 22.98L16.4 21.33Z" />
+		</g>
+	</g>
+</svg>
