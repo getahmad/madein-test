@@ -15,8 +15,11 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico"/>
+
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -46,11 +49,11 @@
       <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content" style="z-index: 3">
-          <span class="close">&times;</span>
-          <a href="#about">About Us</a>
-          <a href="#services">Our Services</a>
-          <a href="#news">Latest News</a>
-          <a href="#makeEnquiry">Make enquiry</a>
+          <span class="close d-flex justify-content-end">&times;</span>
+          <a id="menuClose" href="#about">About Us</a>
+          <a id="menuClose" href="#services">Our Services</a>
+          <a id="menuClose" href="#news">Latest News</a>
+          <a id="menuClose" href="#makeEnquiry">Make enquiry</a>
         </div>
       </div>
     </nav>
@@ -305,33 +308,8 @@
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
+    <script src="assets/js/main.js"></script>
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

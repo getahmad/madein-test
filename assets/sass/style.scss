@@ -1,0 +1,444 @@
+// START Header
+.btn-toggle {
+  background: none;
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal-content a {
+  text-align: center;
+  color: #000;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+// END Header
+
+// START Hero
+.jumbotron {
+  background: #000000;
+  margin-top: -70px;
+  height: 778px;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  float: right;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-text {
+  margin-top: 270px;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  button {
+    margin-top: 95px;
+    width: 194px;
+    height: 72px;
+    background-color: #00b4bc;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.btn-call {
+  padding-top: 120px;
+  margin-left: 32px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  font-family: "Poppins";
+
+  &:hover {
+    color: #00b4bc;
+  }
+}
+// END Hero
+
+// START About Us
+.about-us {
+  background: #000000;
+  margin-top: -32px;
+  height: 678px;
+}
+
+.about-img {
+  position: absolute;
+  right: 0px;
+  margin-top: 158px;
+  margin-right: 128px;
+}
+
+.about-text {
+  p {
+    margin-top: 126px;
+    font-size: 18px;
+    color: #8a8a8a;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  h1 {
+    margin-top: 17px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.about-paragraph {
+  margin-left: 94px;
+  p {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 27px;
+    color: #eeeeee;
+    font-weight: 400;
+    font-family: "Hind";
+  }
+}
+
+.more-about {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #00b4bc;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+// END About Us
+
+// START Our Services
+.our-services {
+  background-color: #1a1a1a;
+
+  p {
+    padding-top: 100px;
+    font-size: 18px;
+    color: #8a8a8a;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  h1 {
+    margin-bottom: 45px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.service-content {
+  h3 {
+    margin-bottom: 22px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  p {
+    padding-top: 0;
+    margin-bottom: 150px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #eeeeee;
+    font-weight: 400;
+    font-family: "Hind";
+  }
+
+  a {
+    font-size: 20px;
+    color: #00b4bc;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+  }
+}
+// END Our Services
+
+// START: For Investor
+.for-investor {
+  background: #000000;
+  height: 548px;
+}
+
+.investor-img {
+  position: absolute;
+  right: 0px;
+
+  /* z-index: 1; */
+  margin-top: 159px;
+}
+
+.investor-content {
+  p {
+    padding-top: 129px;
+    font-size: 16px;
+    color: #8a8a8a;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  h1 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.investor-paragraph {
+  margin-left: 93px;
+
+  p {
+    padding-top: 54px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #eeeeee;
+    font-weight: 400;
+    font-family: "Hind";
+  }
+}
+
+.more-investor {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #00b4bc;
+  font-weight: 600;
+  font-family: "Poppins";
+
+  &:hover {
+    color: #00b4bc;
+  }
+}
+// END : For Investor
+
+// START: Latest News
+.latest-news {
+  background-color: #1a1a1a;
+
+  p {
+    padding-top: 98px;
+    font-size: 16px;
+    color: #8a8a8a;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+
+  a {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #00b4bc;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+  }
+}
+
+.card {
+  background: none;
+  border: none;
+}
+
+.card-body {
+  padding: 0;
+  padding-bottom: 110px;
+
+  p {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #8a8a8a;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    display: inline;
+  }
+
+  img {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+}
+// END Latest News
+
+// START: CTA
+.cta-info {
+  background: #000000;
+
+  h1 {
+    padding-top: 78px;
+    padding-bottom: 34px;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.btn-cta {
+  width: 194px;
+  height: 72px;
+  background-color: #000000;
+  border: 2px solid #00b4bc;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 72px;
+}
+// END: cta
+
+// START : Footer
+.footer {
+  background-color: #1a1a1a;
+
+  a {
+    padding-top: 53px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    color: #fff;
+  }
+
+  hr {
+    margin-top: 37px;
+    margin-bottom: 31px;
+    border: 1px solid #707070;
+  }
+}
+
+.copyright {
+  padding-bottom: 34px;
+}
+// END : Footer
+
+// START Responsive
+@media (max-width: 767.98px) {
+  .hero-text {
+    margin-top: 100px;
+
+    h1 {
+      font-size: 37px;
+    }
+  }
+
+  .about-us {
+    margin-top: -300px;
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .about-paragraph {
+    margin-left: 0;
+  }
+
+  .our-services {
+    h1 {
+      font-size: 40px;
+    }
+
+    img {
+      max-width: 350px;
+    }
+  }
+
+  .service-content p {
+    margin-bottom: 10px;
+  }
+
+  .investor-content p {
+    padding-top: 50px;
+  }
+
+  .investor-paragraph {
+    margin-left: 0;
+
+    p {
+      padding-top: 20px;
+    }
+  }
+
+  .more-investor {
+    margin-top: 30px;
+  }
+
+  .img-card-news {
+    width: 100%;
+  }
+
+  .footer a {
+    display: none;
+  }
+}
+// END Responsive
